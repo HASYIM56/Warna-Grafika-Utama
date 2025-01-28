@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-custom {
+    background-color: #1D3557; /* Navy Blue */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 50px; /* Adjust the logo size */
+    height: 50px;
+    object-fit: cover;
+}
+
+.navbar-logo-text {
+    font-family: 'Roboto Slab', serif; /* Custom font for the heading */
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 10px;
+}
+
+.vision-mission-section,
+.about-us-section {
+    background-color: #F1FAEE;
+    padding: 60px 0;
+    color: black;
+}
+
+.hero-section p,
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1.display-4 {
+    font-family: 'Roboto Slab', serif; /* Custom font for the heading */
+    color: #1D3557;
+}
+
+h3 {
+    font-weight: 600;
+    color: #1D3557;
+}
+
+.hero-section p {
+    color: black; /* Changed to black for better visibility */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #1D3557;
+    color: white;
+    padding: 30px 0;
+}
+
+p {
+    font-weight: 300; /* Lighter font for paragraphs */
+}
+
+/* Glassmorphism effect for content */
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom Button Style */
+.btn-custom {
+    background-color: #1D3557; /* Navy Blue background */
+    color: white;
+    font-weight: 500;
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 50px; /* Make buttons pill-shaped */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #457B9D; /* Lighten the blue on hover */
+}
+
+.container.text-center {
+    margin-top: 40px;
+}
+
+/* Custom Previous Button Style */
+.btn-custom-prev {
+    background-color: #1D3557; /* Navy Blue background */
+    color: white;
+    font-weight: 500;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 50px; /* Make button pill-shaped */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom-prev:hover {
+    background-color: #457B9D; /* Lighten the blue on hover */
+}
+
+/* Custom Next Button Style */
+.btn-custom-next {
+    background-color: #1D3557; /* Navy Blue background */
+    color: white;
+    font-weight: 500;
+    padding: 12px 30px;
+    margin-top: 20px;
+    margin-left: 20px; /* Space between buttons */
+    border-radius: 50px; /* Make button pill-shaped */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom-next:hover {
+    background-color: #457B9D; /* Lighten the blue on hover */
+}

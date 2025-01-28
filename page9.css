@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-custom {
+    background-color: #1D3557;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.navbar-logo-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 10px;
+}
+
+.contact-section {
+    background-color: #F1FAEE;
+    padding: 60px 0;
+    color: black;
+}
+
+h1.display-4 {
+    font-family: 'Roboto Slab', serif;
+    color: #1D3557;
+}
+
+.contact-info h3 {
+    font-family: 'Roboto Slab', serif;
+    color: #1D3557;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    color: #1D3557;
+    font-weight: 500;
+}
+
+.social-media h3 {
+    font-family: 'Roboto Slab', serif;
+    color: #1D3557;
+    margin-bottom: 20px;
+}
+
+.social-media i {
+    color: #1D3557;
+    transition: color 0.3s ease;
+}
+
+.social-media i:hover {
+    color: #A8DADC;
+}
+
+.pagination-buttons {
+    margin-top: 30px;
+}
+
+.btn-pill {
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.btn-prev {
+    background-color: #1D3557;
+    color: white;
+    margin-right: 20px;
+}
+
+.btn-prev:hover {
+    background-color: #A8DADC;
+    color: white;
+}
+
+.footer {
+    background-color: #1D3557;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer p a {
+    color: #A8DADC;
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
+}

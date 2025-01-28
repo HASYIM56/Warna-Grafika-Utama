@@ -1,0 +1,286 @@
+/* General reset and box-sizing */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Prevent overflow and ensure everything stays within the viewport */
+    word-wrap: break-word;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Ensure the body takes full width without overflow */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar Styling */
+.navbar-custom {
+    background-color: #1D3557; /* Navy Blue */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.navbar-logo-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 10px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('img/logo.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    position: relative;
+    width: 100%; /* Ensure the section doesn't overflow */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Darker overlay for better readability */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+h1.display-4 {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+.hero-section p {
+    color: white;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #F1FAEE;
+    padding: 60px 0;
+    width: 100%;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.service-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure cards do not overflow */
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+.footer {
+    background-color: #1D3557;
+    color: white;
+    padding: 30px 0;
+    width: 100%; /* Ensure footer stays within viewport */
+    box-sizing: border-box; /* Prevent overflow due to padding */
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 300;
+}
+
+/* Glassmorphism Effect */
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.glassmorphism img {
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Produksi Section */
+#produksi {
+    background-color: #e3f2fd;
+    padding: 60px 0;
+    width: 100%; /* Ensure section stays within viewport */
+}
+
+#produksi h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#produksi .lead {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#produksi .col-md-4,
+#produksi .col-md-6 {
+    padding: 15px;
+}
+
+#produksi p {
+    font-weight: 400;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Button Styling */
+.btn-next-page {
+    display: inline-block;
+    background-color: #1D3557;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-next-page:hover {
+    background-color: #457b9d;
+    transform: translateY(-5px);
+}
+
+.btn-next-page:active {
+    transform: translateY(0);
+}
+
+/* Employee Activities Section */
+#employee-activities .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+#employee-activities .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%; /* Prevent overflow */
+}
+
+#employee-activities .col-md-4 {
+    flex: 1 1 calc(33.33% - 20px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Adjust navbar for smaller screens */
+    .navbar-brand {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-logo-text {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    /* Services Section */
+    .services-section {
+        padding: 40px 0;
+    }
+
+    .service-card {
+        margin-bottom: 20px;
+    }
+
+    /* Produksi Section */
+    #produksi h2 {
+        font-size: 2rem;
+    }
+
+    /* Button Styling */
+    .btn-next-page {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+
+    /* Ensure flex container doesn't overflow */
+    #employee-activities .row {
+        flex-direction: column;
+    }
+
+    #employee-activities .col-md-4 {
+        flex: 1 1 100%;
+    }
+}
+
+/* For very small screens (mobile devices) */
+@media screen and (max-width: 480px) {
+    /* Hero Section heading size */
+    .hero-section h1.display-4 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    /* Adjust padding and margins */
+    .services-section {
+        padding: 30px 0;
+    }
+
+    /* Produksi Section */
+    #produksi h2 {
+        font-size: 1.8rem;
+    }
+}
